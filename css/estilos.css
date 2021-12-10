@@ -1,0 +1,95 @@
+
+.page-header{
+    font-family: cursive;
+}
+
+.page-header h1{
+    text-align: center;
+    font-family: serif;
+}
+
+.dj-banner{
+    margin: 30px 0; 
+    position: relative;
+}
+
+.dj-banner .dj-bg{
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    width: 100%;}
+
+.dj-banner .dj-bg img{
+    display: block; 
+    margin: 20px auto; 
+    padding: 20px 0;
+    margin-right: 100px;
+}
+
+.dj-banner .dj-text{
+    text-align: left; 
+    padding-bottom: 20px;
+    position: absolute; 
+    top: 50%; 
+    left: 10%; 
+    transform: translate(-10%, -50%); 
+    width: 50%; 
+    text-align: left;
+}
+
+.dj-banner .dj-text h1{
+    font-size: calc(2*1.5vw);
+}
+
+.dj-banner .dj-text p{
+    font-size: calc(1.2*1.5vw);
+}
+
+.container-fluid{
+    font-family: cursive;
+}
+
+.tabla-conte{
+    font-family:cursive;
+    text-align: left;
+    font-size: 17px;
+}
+
+h2 {
+    text-align: center;
+    font-family: serif;
+}
+
+h3{
+    text-align: left;
+    font-family: serif;
+}
+
+.conte-texto{
+    text-align: left;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.col-sm-12{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.container{
+    font-family:cursive;
+    text-align: left;
+    font-size: 17px;
+}
+
+.pie{
+    height: 40px;
+    color: #485868;
+    margin-top: 10px;
+    font-family: cursive;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 10px;
+}

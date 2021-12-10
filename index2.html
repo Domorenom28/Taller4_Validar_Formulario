@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TALLER 4</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script type="text/javascript" src="validar.js"></script>
+</head>
+<body>
+	<div class="dj-banner">
+		<div class="dj-bg">
+		    <img src="unalLogo.png" alt="" height="200px">
+		    <div class="dj-text">
+		        <h1><b>Pagina web con Bootstrap</b></h1>
+		        <p>Da click en el siguiente boton para ir a la página de bootstrap.</p>
+		        <p><a href="https://getbootstrap.com/"><label style="border-radius: 5px; background: #763cb3; border-color: #763cb3;  height:44px; color: white; width: 152px; text-align: center; font-size: 16px; padding: 10px 0;">Bootstrap</label> 
+		        </a></p>
+		    </div>
+		</div>            
+	</div>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="BootstrapLogo.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+					Bootstrap
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index2.html">Inscripcion</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled">Contactenos</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<br>
+	<section class="container" style="font-weight: bold;font-style: italic;">
+		<h2>Formulario de registro</h2>
+		<form class="row g-3" onsubmit="return validar();">
+			<div class="col-12">
+				<label for="inputAddress" class="form-label">Nombre</label>
+				<input type="text" class="form-control" id="Nombre" placeholder="Ejemplo: Juan Perez" >
+			</div>
+			<div class="col-md-6">
+				<label for="inputEmail4" class="form-label">Carrera</label>
+				<input type="text" class="form-control" id="Carrera" placeholder="Ejemplo: Ingenieria civil">
+			</div>
+			<div class="col-md-4">
+				<label for="inputState" class="form-label">Campus</label>
+				<select id="Selector" id="Campus" class="form-select">
+					<option selected></option>
+					<option>Palogrande</option>
+					<option>La Nubia</option>
+					<option>El Cable</option>
+				</select>
+			</div>
+			<div class="col-md-4">
+				<label for="inputCity" class="form-label">Edad</label>
+				<input type="number" class="form-control" id="Edad">
+			</div>
+			<div class="col-md-4">
+				<label for="inputZip" class="form-label">Fecha</label>
+				<input type="date" class="form-control" id="Fecha">
+			</div>
+			<div class="col-12">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="Check">
+					<label class="form-check-label" for="gridCheck">
+						Acepto terminos y condiciones
+					</label>
+				</div>
+			</div>
+			<div class="col-12">
+				<button type="submit" class="btn btn-success">Registrarme</button>
+			</div>
+		</form>
+	</section>
+	<br>
+	<div class="container">
+		<h2>Tabla de registros</h2>
+		<section class="tabla-conte">
+			<table id="example" class="table table-striped table-dark" style="width:100%">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Carrera</th>
+						<th>Campus</th>
+						<th>Edad</th>
+						<th>Fecha</th>
+						<th>Codigo</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Tiger Nixon</td>
+						<td>System Architect</td>
+						<td>El Cable</td>
+						<td>61</td>
+						<td>2011/04/25</td>
+						<td>320800</td>
+					</tr>
+					<tr>
+						<td>Garrett Winters</td>
+						<td>Accountant</td>
+						<td>La Nubia</td>
+						<td>63</td>
+						<td>2011/07/25</td>
+						<td>170750</td>
+					</tr>
+					<tr>
+						<td>Ashton Cox</td>
+						<td>Junior Technical Author</td>
+						<td>Palogrande</td>
+						<td>66</td>
+						<td>2009/01/12</td>
+						<td>86000</td>
+					</tr>
+					<tr>
+						<td>Cedric Kelly</td>
+						<td>Senior Javascript Developer</td>
+						<td>Palogrande</td>
+						<td>22</td>
+						<td>2012/03/29</td>
+						<td>433060</td>
+					</tr>
+					<tr>
+						<td>Airi Satou</td>
+						<td>Accountant</td>
+						<td>La Nubia</td>
+						<td>33</td>
+						<td>2008/11/28</td>
+						<td>162700</td>
+					</tr>
+					<tr>
+						<td>Brielle Williamson</td>
+						<td>Integration Specialist</td>
+						<td>El Cable</td>
+						<td>61</td>
+						<td>2012/12/02</td>
+						<td>372000</td>
+					</tr>
+					<tr>
+						<td>Herrod Chandler</td>
+						<td>Sales Assistant</td>
+						<td>Palogrande</td>
+						<td>59</td>
+						<td>2012/08/06</td>
+						<td>137500</td>
+					</tr>
+					<tr>
+						<td>Rhona Davidson</td>
+						<td>Integration Specialist</td>
+						<td>La Nubia</td>
+						<td>55</td>
+						<td>2010/10/14</td>
+						<td>327900</td>
+					</tr>
+					<tr>
+						<td>Colleen Hurst</td>
+						<td>Javascript Developer</td>
+						<td>El Cable</td>
+						<td>39</td>
+						<td>2009/09/15</td>
+						<td>205500</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Nombre</th>
+						<th>Carrera</th>
+						<th>Campus</th>
+						<th>Edad</th>
+						<th>Fecha</th>
+						<th>Codigo</th>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+	</div>
+		<div class="pie">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-app" viewBox="0 0 16 16">
+			  <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
+			  <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+				<path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+				<path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+			</svg> 
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+			  <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+			  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+	  			<path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
+	  			<path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+			</svg>
+			<footer>&copy; 2021 Taller.com Todos los derechos reservados</footer>
+		</div>
+	</body>
+</body>
+
+</html>
